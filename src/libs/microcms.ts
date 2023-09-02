@@ -37,8 +37,8 @@ export const getList = async (queries?: MicroCMSQueries) => {
     queries,
   });
 
-  //データの取得が目視しやすいよう遅延させる
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  //   //データの取得が目視しやすいよう遅延させる
+  //   await new Promise((resolve) => setTimeout(resolve, 3000));
 
   return listData;
 };
@@ -54,8 +54,8 @@ export const getDetail = async (
     queries,
   });
 
-  //データの取得が目視しやすいよう遅延させる
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  //   //データの取得が目視しやすいよう遅延させる
+  //   await new Promise((resolve) => setTimeout(resolve, 3000));
 
   return detailData;
 };
