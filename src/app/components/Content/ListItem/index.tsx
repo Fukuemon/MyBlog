@@ -11,7 +11,7 @@ const ContentListItem: FC<Props> = (props) => {
   return (
     <li key={props.blog.id}>
       <Link href={`/static/${props.blog.id}`}>
-        <div className="text-xl font-medium text-black">{props.blog.title}</div>
+        <div className="text-xl font-medium text-text">{props.blog.title}</div>
       </Link>
       <p>投稿日時：{props.time}</p>
     </li>
