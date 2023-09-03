@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Hamburger from "../Icon/Hamburger";
-const Header = () => {
+const Navigation = () => {
   return (
     <nav className="p-5 bg-main shadow md:flex md:items-center md:justify-between">
       <div className="flex justify-between items-center">
-        <span className="text-2xl font-bold cursor-pointer inline">
-          ふくえもんの庭
-        </span>
+        <h1 className="text-primary text-xl cursor-pointer">
+          ふくえもんの技術園
+        </h1>
         <Hamburger />
       </div>
       <ul className="md:flex md:items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
@@ -27,4 +27,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navigation;

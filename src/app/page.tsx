@@ -1,7 +1,13 @@
-import Image from "next/image";
+import Header from "./components/Mypage/Header";
+import Introduction from "./components/Mypage/Introduction";
+import Skill from "./components/Mypage/Skill";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between "></main>
+    <main className="text-primary">
+      <Header />
+      <Introduction />
+      <Skill />
+    </main>
   );
 }
