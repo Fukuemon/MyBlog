@@ -9,6 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        // font-**で呼び出すclass名 : フォント指定の配列
+        "source-code-pro": ["Source Code Pro", "monospace"],
+        burtons: ["Burtons", "cursive"],
+      },
       colors: {
         back: "#fdfbef",
         main: "#d8bd97",

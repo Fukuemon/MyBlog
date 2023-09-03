@@ -1,10 +1,21 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "./components/Mypage/Header";
+import Navigation from "./components/Navigation";
 
-const inter = Inter({ subsets: ["latin"] });
+const source_code_pro = Source_Code_Pro({
+  // 後ほどTailwindCSSで指定する変数名を指定する
+  variable: "--font-source-code-pro",
+  // 利用したいweightやstyleなど指定する
+  weight: "400",
+  style: "normal",
+  // サブセット
+  subsets: ["latin"],
+  // 代替フォントを表示する
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,9 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className=" bg-back">
-        <div className="text-text flex flex-col min-h-screen">
-          <Header />
-          <main className="text-text flex-1 max-w-4xl w-full mx-auto">
+        <div className="">
+          <Navigation />
+          <main className="text-text flex-1 max-w-4xl w-full mx-auto px-8 pt-8">
             {children}
           </main>
           <Footer />

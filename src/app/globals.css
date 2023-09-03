@@ -6,6 +6,9 @@
   .text-selected-text {
     @apply text-sky-600 transition-all duration-300
   }
+  .text-primary {
+    @apply font-source-code-pro text-text
+  }
 }
 
 
