@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Source_Code_Pro } from "next/font/google";
 import Footer from "./components/Footer";
-import Header from "./components/Mypage/Header";
 import Navigation from "./components/Navigation";
 
 const source_code_pro = Source_Code_Pro({
@@ -32,7 +31,7 @@ export default function RootLayout({
       <body className=" bg-back">
         <div className="">
           <Navigation />
-          <main className="text-text flex-1 max-w-4xl w-full mx-auto px-8 pt-8">
+          <main className="text- flex-1 max-w-4xl w-full mx-auto px-8 pt-8">
             {children}
           </main>
           <Footer />

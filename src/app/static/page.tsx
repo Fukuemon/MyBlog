@@ -10,9 +10,11 @@ export default async function StaticPage() {
   }
 
   return (
-    <div>
-      <h1>記事一覧</h1>
-      <ul>
+    <div className="min-h-screen">
+      <div className="text-center text-4xl font-source-code-pro pb-10">
+        <h1>記事一覧</h1>
+      </div>
+      <ul className="flex flex-col space-y-7 ">
         {contents.map((post, index) => {
           // 投稿の情報とindexを追加
           return (

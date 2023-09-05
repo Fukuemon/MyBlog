@@ -9,12 +9,16 @@ interface Props {
 
 const ContentListItem: FC<Props> = (props) => {
   return (
-    <li key={props.blog.id}>
-      <Link href={`/static/${props.blog.id}`}>
-        <div className="text-xl font-medium text-text">{props.blog.title}</div>
-      </Link>
-      <p>投稿日時：{props.time}</p>
-    </li>
+    <div className="font-burtons border p-8  ">
+      <li key={props.blog.id}>
+        <Link href={`/static/${props.blog.id}`}>
+          <div className="text-xl font-source-code-pro text-text">
+            タイトル：{props.blog.title}
+          </div>
+        </Link>
+        <p>投稿日時：{props.time}</p>
+      </li>
+    </div>
   );
 };
 

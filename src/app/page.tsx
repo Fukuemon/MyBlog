@@ -4,10 +4,10 @@ import Skill from "./components/Mypage/Skill";
 
 export default function Home() {
   return (
-    <main className="text-primary">
+    <div>
       <Header />
       <Introduction />
       <Skill />
-    </main>
+    </div>
   );
 }

@@ -22,6 +22,12 @@ const Navigation = () => {
         >
           記事一覧
         </Link>
+        <Link
+          href="/intro"
+          className="mx-4 my-6 md:my-0 font-bold hover:text-selected-text"
+        >
+          MeAR紹介
+        </Link>
       </ul>
     </nav>
   );

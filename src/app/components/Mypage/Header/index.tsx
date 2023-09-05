@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <section className="min-h-screen">
+    <section className="">
       <div className="px-8 py-8">
         <div className="text-primary text-center p-10 ">
           <h2 className="pb-4 text-5xl text-black font-burtons font-medium">
