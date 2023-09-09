@@ -13,16 +13,17 @@ export default async function StaticPage() {
   return (
     <div>
       <Navigation title="PostPage" />
-      <div className="min-h-screen ">
-        <ul className="flex flex-col space-y-7 ">
+      <main className="min-h-screen flex flex-col max-w-4xl w-full mx-auto px-8 pt-8 md:text-center">
+        {/* <ul className="flex flex-col space-y-7 ">
           {contents.map((post, index) => {
             // 投稿の情報とindexを追加
             return (
               <ContentListItem key={index} blog={post} time={time} /> //コンテンツとkeyを渡す
             );
           })}
-        </ul>
-      </div>
+        </ul> */}
+        <h1 className="text-5xl text-center font-burtons">Coming Soon</h1>
+      </main>
     </div>
   );
 }

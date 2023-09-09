@@ -12,7 +12,8 @@ import Button from "../../elements/Button";
 import { Mockdata } from "@/model/PostCard";
 
 type Props = {
-  restaurant: string;
+  title: string;
+  url: string;
 };
 
 const data = Mockdata;
@@ -21,10 +22,10 @@ const data = Mockdata;
 export const PostNavbar: FC<Props> = (props) => {
   return (
     <nav className="navbar items-center justify-center relative">
-      <Link href="/intro" className="absolute z-1 left-2 top-4">
+      <Link href={props.url} className="absolute z-1 left-2 top-4">
         <MdOutlineArrowBackIosNew className="text-3xl text-black " />
       </Link>
-      <h2 className="text-2xl italic font-bold">{props.restaurant}</h2>
+      <h2 className="text-2xl italic font-bold">{props.title}</h2>
     </nav>
   );
 };
@@ -42,7 +43,7 @@ const PostDetail = () => {
 
   return (
     <div>
-      <PostNavbar restaurant="8EIGHT BEEF" />
+      <PostNavbar title="8EIGHT BEEF" url="/intro" />
       <CardHeader {...data} />
 
       {/* 画像といいね */}

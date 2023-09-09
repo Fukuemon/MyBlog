@@ -9,8 +9,8 @@ export default function Home() {
       <Navigation title="MyPage" />
       <main className="flex-1 max-w-4xl w-full mx-auto px-8 pt-8">
         <Header />
-        <Introduction />
         <Skill />
+        <Introduction />
       </main>
     </div>
   );
