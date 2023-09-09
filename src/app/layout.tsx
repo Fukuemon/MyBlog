@@ -29,11 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className=" bg-back">
-        <div className="">
-          <Navigation />
-          <main className="text- flex-1 max-w-4xl w-full mx-auto px-8 pt-8">
-            {children}
-          </main>
+        <div className="h-screen">
+          <main className="">{children}</main>
           <Footer />
         </div>
       </body>

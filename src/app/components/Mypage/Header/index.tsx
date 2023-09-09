@@ -8,7 +8,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <section className="px-4 py-4">
-      <div className="text-primary text-center pb-4  ">
+      <div className="text-primary text-center pb-4">
         <h2 className="pb-4 text-5xl text-black font-burtons font-medium">
           Yuya Fukuura
         </h2>
