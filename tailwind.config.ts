@@ -15,6 +15,7 @@ const config: Config = {
         burtons: ["Burtons", "cursive"],
       },
       colors: {
+        intro: "#fffdf8",
         back: "#fdfbef",
         main: "#d8bd97",
         text: "#493c33",

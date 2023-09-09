@@ -1,6 +1,8 @@
 //投稿詳細ページ
 
 import ContentDetail from "@/app/components/Content/Detail";
+import { PostNavbar } from "@/app/components/Intro/Detail";
+import Navigation from "@/app/components/Navigation";
 import { getDetail, getList } from "@/libs/microcms";
 import { notFound } from "next/navigation";
 
@@ -30,6 +32,9 @@ export default async function StaticDetailPage({
   }
 
   return (
-    <ContentDetail post={post} /> //コンテンツを渡す
+    <div>
+      <PostNavbar title="" url="/static" />
+      <ContentDetail post={post} />
+    </div>
   );
 }

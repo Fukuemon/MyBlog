@@ -9,29 +9,35 @@
   .text-primary {
     @apply font-source-code-pro text-text
   }
-}
+  /* カード  */
+  .card {
+    @apply bg-white text-gray-700 w-80 min-h-[10rem] shadow-xl rounded-lg overflow-hidden border sm:w-96
+  }
+  .card-header{
+    @apply  flex justify-between items-center px-2 py-2
+  }
 
+  .card-title {
+    @apply text-2xl font-bold overflow-ellipsis overflow-hidden whitespace-nowrap
+  }
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  .card-subtitle { 
+    @apply text-lg font-semibold overflow-ellipsis overflow-hidden whitespace-nowrap
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .badge {
+    @apply px-3 py-1 rounded-full text-xs bg-cyan-100 font-mono text-blue-800 border
+  }
+
+  .tag {
+    @apply px-3 py-1 rounded-full text-xs border
+  }
+
+  /* ナブバー */
+  .navbar {
+    @apply  flex text-text  w-full h-16 bg-main  items-center p-4 border-2 text-base sm:text-3xl
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+
+

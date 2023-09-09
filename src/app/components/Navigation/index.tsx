@@ -1,11 +1,16 @@
 import Link from "next/link";
 import Hamburger from "../Icon/Hamburger";
-const Navigation = () => {
+import { FC } from "react";
+
+type Props = {
+  title: string;
+};
+const Navigation: FC<Props> = (props) => {
   return (
     <nav className="p-5 bg-main shadow md:flex md:items-center md:justify-between">
       <div className="flex justify-between items-center">
-        <h1 className="text-primary text-xl cursor-pointer">
-          ふくえもんの技術園
+        <h1 className="text-primary text-3xl cursor-pointer font-burtons">
+          {props.title}
         </h1>
         <Hamburger />
       </div>

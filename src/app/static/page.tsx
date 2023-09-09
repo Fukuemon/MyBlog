@@ -1,5 +1,6 @@
 import { getList } from "@/libs/microcms";
 import ContentListItem from "../components/Content/ListItem";
+import Navigation from "../components/Navigation";
 
 export default async function StaticPage() {
   const { contents } = await getList();
@@ -10,18 +11,19 @@ export default async function StaticPage() {
   }
 
   return (
-    <div className="min-h-screen">
-      <div className="text-center text-4xl font-source-code-pro pb-10">
-        <h1>記事一覧</h1>
-      </div>
-      <ul className="flex flex-col space-y-7 ">
-        {contents.map((post, index) => {
-          // 投稿の情報とindexを追加
-          return (
-            <ContentListItem key={index} blog={post} time={time} /> //コンテンツとkeyを渡す
-          );
-        })}
-      </ul>
+    <div>
+      <Navigation title="PostPage" />
+      <main className="min-h-screen flex flex-col max-w-4xl w-full mx-auto px-8 pt-8 md:text-center">
+        {/* <ul className="flex flex-col space-y-7 ">
+          {contents.map((post, index) => {
+            // 投稿の情報とindexを追加
+            return (
+              <ContentListItem key={index} blog={post} time={time} /> //コンテンツとkeyを渡す
+            );
+          })}
+        </ul> */}
+        <h1 className="text-5xl text-center font-burtons">Coming Soon</h1>
+      </main>
     </div>
   );
 }
