@@ -71,7 +71,10 @@ export default function Introduction() {
           以下のリンクからGoogleフォームにアクセスし、ご意見をお聞かせください。
         </p>
         <div className="flex justify-center">
-          <Link href="" className="text-xl text-blue-300">
+          <Link
+            href="https://forms.gle/4zmc8JYsm2LaCU1Y9"
+            className="text-xl text-blue-300"
+          >
             -Googleフォーム-
           </Link>
         </div>
