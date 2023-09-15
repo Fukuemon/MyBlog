@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Introduction = () => {
   return (
     <section className="text-primary">
@@ -24,6 +26,20 @@ const Introduction = () => {
         <p className="py-4">
           興味のある方は、ぜひ以下のリンクからご覧ください。
         </p>
+        <div className="flex flex-col justify-center">
+          <span className="text-lg font-bold pr-3">ObjectCapture紹介</span>
+          <Link href="https://developer.apple.com/videos/play/wwdc2023/10191/">
+            <p className="text-blue-500 underline">
+              Meet Object Capture for iOS- WWDC23 -videos
+            </p>
+          </Link>
+          <span className="text-lg font-bold pr-3">
+            おすすめ3Dスキャンアプリ(Scaniverse)
+          </span>
+          <Link href="https://scaniverse.com/">
+            <p className="text-blue-500 underline">Scaniverse</p>
+          </Link>
+        </div>
       </div>
     </section>
   );
