@@ -3,7 +3,10 @@ import React from "react";
 import PostCard from "../components/Intro/Card";
 import { Mockdata } from "@/model/PostCard";
 import Navigation from "../components/Navigation";
-import { HiCubeTransparent } from "react-icons/hi";
+import { PiCubeFocus } from "react-icons/pi";
+import Image from "next/image";
+import post1 from "/public/detailpost1.png";
+import post2 from "/public/detailpost2.png";
 
 export default function Introduction() {
   return (
@@ -55,15 +58,36 @@ export default function Introduction() {
           <p className="pt-1 text-sm">
             投稿詳細画面に移動すると、初めはメニュー画像が表示されています。
           </p>
+          <div className=" py-8 flex flex-col justify-center items-center">
+            <p className=" font-normal">(投稿詳細画面)</p>
+            <Image
+              src={post1}
+              alt="menu"
+              width={300}
+              height={300}
+              className="shadow-xl"
+            />
+          </div>
+
           <li className="text-lg pt-4 font-bold">
             2. 画像下にある「3Dでみる」をタップ
             <p className="pt-1 text-sm font-light">
               ボタンを押すことで、画像と3Dモデルを切り替えることができます。
             </p>
+            <div className=" py-8 flex flex-col justify-center items-center">
+              <p className=" font-normal">(3Dモデル表示後)</p>
+              <Image
+                src={post2}
+                alt="menu"
+                width={300}
+                height={300}
+                className="shadow-xl"
+              />
+            </div>
             <p className="pt-4 text-center font-bold text-red-500">
               3Dモデルの右下にあるcubeアイコン
               <span className="flex justify-center text-center text-black">
-                <HiCubeTransparent />
+                <PiCubeFocus />
               </span>
               をタップすると、 AR画面へ移動します
             </p>
