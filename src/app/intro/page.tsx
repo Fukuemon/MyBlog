@@ -3,6 +3,7 @@ import React from "react";
 import PostCard from "../components/Intro/Card";
 import { Mockdata } from "@/model/PostCard";
 import Navigation from "../components/Navigation";
+import { HiCubeTransparent } from "react-icons/hi";
 
 export default function Introduction() {
   return (
@@ -24,11 +25,14 @@ export default function Introduction() {
         </p>
         <p className=" text-red-400">(注意)</p>
         <p className="pyー1 text-xs">
-          本アプリのAR表示機能は、機能の性質上、モバイル端末でのみ動作します
+          本アプリのAR表示機能は、機能の性質上、
+          <span className="text-red-400">モバイル端末</span>でのみ動作します
           <br />
           そのため、PCからアクセスされている場合はお手数ですが
           <br />
-          スマートフォンからアクセスしていただけると幸いです。
+          <span className="font-bold ">
+            スマートフォンからアクセスしていただけると幸いです。
+          </span>
         </p>
 
         {/* 手順 */}
@@ -42,23 +46,26 @@ export default function Introduction() {
         </div>
         {/* 手順解説 */}
         <ol className="py-8">
-          <li className="text-lg">
+          <li className="text-lg font-bold">
             1. 上記の投稿カードをタップし、
             <br />
             <span className="mr-4"></span>
             投稿詳細画面に遷移
           </li>
           <p className="pt-1 text-sm">
-            投稿詳細画面に遷移すると、初めはメニュー画像が表示されています。
+            投稿詳細画面に移動すると、初めはメニュー画像が表示されています。
           </p>
-          <li className="text-lg pt-4">
+          <li className="text-lg pt-4 font-bold">
             2. 画像下にある「3Dでみる」をタップ
-            <p className="pt-1 text-sm">
+            <p className="pt-1 text-sm font-light">
               ボタンを押すことで、画像と3Dモデルを切り替えることができます。
             </p>
-            <p className="pt-4 text-center font-bold">
-              3Dモデルの右下にあるcubeアイコンをタップすると、
-              AR画面へ遷移します
+            <p className="pt-4 text-center font-bold text-red-500">
+              3Dモデルの右下にあるcubeアイコン
+              <span className="flex justify-center text-center text-black">
+                <HiCubeTransparent />
+              </span>
+              をタップすると、 AR画面へ移動します
             </p>
           </li>
         </ol>
