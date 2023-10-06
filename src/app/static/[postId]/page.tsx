@@ -1,8 +1,8 @@
 //投稿詳細ページ
 
-import ContentDetail from "@/app/components/Content/Detail";
-import { PostNavbar } from "@/app/components/Intro/Detail";
-import Navigation from "@/app/components/Navigation";
+import ContentDetail from "@/app/static/_components/Detail";
+import { PostNavbar } from "@/app/intro/_components/Detail";
+import Navigation from "@/app/_components/Navigation";
 import { getDetail, getList } from "@/libs/microcms";
 import { notFound } from "next/navigation";
 

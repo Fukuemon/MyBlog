@@ -1,8 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Source_Code_Pro } from "next/font/google";
-import Footer from "./components/Footer";
-import Navigation from "./components/Navigation";
+import Footer from "./_components/Footer";
 
 const source_code_pro = Source_Code_Pro({
   // 後ほどTailwindCSSで指定する変数名を指定する
@@ -28,11 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className=" bg-back">
-        <div className="h-screen">
-          <main className="">{children}</main>
-          <Footer />
-        </div>
+      <body className=" bg-back h-screen">
+        {children}
+        <Footer />
       </body>
     </html>
   );

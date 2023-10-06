@@ -7,8 +7,8 @@ import { CardHeader } from "../Card/Header";
 import Image from "next/image";
 import steak from "/public/steakcombo.jpeg";
 import { GrLocation } from "react-icons/gr";
-import { DynamicModelViewer } from "../../ModelViewer/DynamicModelViewer";
-import Button from "../../elements/Button";
+import { DynamicModelViewer } from "../ModelViewer/DynamicModelViewer";
+import Button from "../../../_components/elements/Button";
 import { Mockdata } from "@/model/PostCard";
 
 type Props = {

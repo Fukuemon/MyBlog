@@ -1,6 +1,6 @@
 import { getList } from "@/libs/microcms";
-import ContentListItem from "../components/Content/ListItem";
-import Navigation from "../components/Navigation";
+import ContentListItem from "./_components/ListItem";
+import Navigation from "../_components/Navigation";
 
 export default async function StaticPage() {
   const { contents } = await getList();
