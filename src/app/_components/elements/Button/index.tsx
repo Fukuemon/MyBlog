@@ -1,9 +1,9 @@
-import React, { FC } from "react";
+import React, { FC } from 'react'
 type Props = {
-  children: React.ReactNode;
-  onClick: () => void;
-  className: string;
-};
+  children: React.ReactNode
+  onClick: () => void
+  className: string
+}
 
 const Button: FC<Props> = (props) => {
   return (
@@ -12,7 +12,7 @@ const Button: FC<Props> = (props) => {
         {props.children}
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

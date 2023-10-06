@@ -1,12 +1,12 @@
-import Link from "next/link";
-import Image from "next/image";
-import React from "react";
-import PostCard from "./_components/Card";
-import { Mockdata } from "@/model/PostCard";
-import Navigation from "../_components/Navigation";
-import { PiCubeFocus } from "react-icons/pi";
-import post1 from "/public/detailpost1.png";
-import post2 from "/public/detailpost2.png";
+import Link from 'next/link'
+import Image from 'next/image'
+import React from 'react'
+import PostCard from './_components/Card'
+import { Mockdata } from '@/model/PostCard'
+import Navigation from '../_components/Navigation'
+import { PiCubeFocus } from 'react-icons/pi'
+import post1 from '/public/detailpost1.png'
+import post2 from '/public/detailpost2.png'
 
 export default function IntroductionPage() {
   return (
@@ -14,23 +14,23 @@ export default function IntroductionPage() {
       <Navigation title="MeAR紹介" />
       <MainContent />
     </div>
-  );
+  )
 }
 
 function MainContent() {
   return (
-    <main className="flex flex-col max-w-4xl w-full mx-auto px-8 pt-8 md:text-center">
+    <main className="mx-auto flex w-full max-w-4xl flex-col px-8 pt-8 md:text-center">
       <IntroSection />
       <InstructionsSection />
       <FeedbackSection />
     </main>
-  );
+  )
 }
 
 function IntroSection() {
   return (
     <>
-      <h1 className="text-xl font-bold text-center">
+      <h1 className="text-center text-xl font-bold">
         3Dモデルの体験による
         <br />
         フィードバックのお願い
@@ -49,18 +49,16 @@ function IntroSection() {
         <br />
         そのため、PCからアクセスされている場合はお手数ですが
         <br />
-        <span className="font-bold ">
-          スマートフォンからアクセスしていただけると幸いです。
-        </span>
+        <span className="font-bold ">スマートフォンからアクセスしていただけると幸いです。</span>
       </p>
     </>
-  );
+  )
 }
 
 function InstructionsSection() {
   return (
     <>
-      <h2 className="text-xl pt-8 font-bold">〜手順〜</h2>
+      <h2 className="pt-8 text-xl font-bold">〜手順〜</h2>
       <PostCardInstructions />
       <ol className="py-8">
         <li className="text-lg font-bold">
@@ -69,11 +67,9 @@ function InstructionsSection() {
           投稿詳細画面に遷移
         </li>
         <DetailInstructions src={post1.src} caption="(投稿詳細画面)" />
-        <li className="text-lg pt-4 font-bold">
+        <li className="pt-4 text-lg font-bold">
           2. 画像下にある「3Dでみる」をタップ
-          <p className="pt-1 text-sm font-light">
-            ボタンを押すことで、画像と3Dモデルを切り替えることができます。
-          </p>
+          <p className="pt-1 text-sm font-light">ボタンを押すことで、画像と3Dモデルを切り替えることができます。</p>
           <DetailInstructions src={post2.src} caption="(3Dモデル表示後)" />
           <p className="pt-4 text-center font-bold text-red-500">
             3Dモデルの右下にあるcubeアイコン
@@ -85,7 +81,7 @@ function InstructionsSection() {
         </li>
       </ol>
     </>
-  );
+  )
 }
 
 function PostCardInstructions() {
@@ -96,43 +92,30 @@ function PostCardInstructions() {
         <PostCard {...Mockdata} />
       </Link>
     </div>
-  );
+  )
 }
 
 type DetailInstructionsProps = {
-  src: string;
-  caption: string;
-};
+  src: string
+  caption: string
+}
 
 function DetailInstructions({ src, caption }: DetailInstructionsProps) {
   return (
-    <div className="py-8 flex flex-col justify-center items-center">
+    <div className="flex flex-col items-center justify-center py-8">
       <p className="font-normal">{caption}</p>
-      <Image
-        src={src}
-        alt="menu"
-        width={300}
-        height={300}
-        className="shadow-xl"
-      />
+      <Image src={src} alt="menu" width={300} height={300} className="shadow-xl" />
     </div>
-  );
+  )
 }
 
 function FeedbackSection() {
   return (
     <>
-      <h2 className="text-xl pt-8 font-bold text-center">
-        〜フィードバックの提出方法〜
-      </h2>
-      <p className="py-4">
-        以下のリンクからGoogleフォームにアクセスし、ご意見をお聞かせください。
-      </p>
+      <h2 className="pt-8 text-center text-xl font-bold">〜フィードバックの提出方法〜</h2>
+      <p className="py-4">以下のリンクからGoogleフォームにアクセスし、ご意見をお聞かせください。</p>
       <div className="flex justify-center">
-        <Link
-          href="https://forms.gle/4zmc8JYsm2LaCU1Y9"
-          className="text-xl text-blue-300"
-        >
+        <Link href="https://forms.gle/4zmc8JYsm2LaCU1Y9" className="text-xl text-blue-300">
           -Googleフォーム-
         </Link>
       </div>
@@ -140,5 +123,5 @@ function FeedbackSection() {
         <p className="py-4">ご協力をお願いいたします!!</p>
       </div>
     </>
-  );
+  )
 }

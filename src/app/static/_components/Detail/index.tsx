@@ -1,6 +1,6 @@
-import { Blog } from "@/libs/microcms";
 import React, { FC } from "react";
 import parse from "html-react-parser";
+import { Blog } from "@/libs/microcms";
 
 type Props = {
   post: Blog;
