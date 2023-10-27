@@ -7,3 +7,4 @@ public
 tailwind.config.js
 next.config.js
 postcss.config.js
+src/app/intro/_components/ModelViewer
