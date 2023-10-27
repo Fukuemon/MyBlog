@@ -1,16 +1,16 @@
 // store.js
-import create from "zustand";
+import create from 'zustand'
 
 type State = {
-  isDrawerOpen: boolean;
-  DrawerOpen: () => void;
-  DrawerClose: () => void;
-};
+  isDrawerOpen: boolean
+  DrawerOpen: () => void
+  DrawerClose: () => void
+}
 
 const useStore = create<State>((set) => ({
   isDrawerOpen: false,
-  DrawerOpen: () => set((state) => ({ isDrawerOpen: true })),
-  DrawerClose: () => set((state) => ({ isDrawerOpen: false })),
-}));
+  DrawerOpen: () => set({ isDrawerOpen: true }),
+  DrawerClose: () => set({ isDrawerOpen: false })
+}))
 
-export default useStore;
+export default useStore

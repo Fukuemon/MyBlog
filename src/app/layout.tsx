@@ -1,6 +1,6 @@
 import './globals.css'
 import { Source_Code_Pro } from 'next/font/google'
-import Footer from './_components/Footer'
+import Footer from './_components/Common/Footer'
 import type { Metadata } from 'next'
 
 const source_code_pro = Source_Code_Pro({

@@ -8,7 +8,7 @@ const SlideBar = () => {
   const onClose = useStore((state) => state.DrawerClose)
 
   return (
-    <div className="group absolute left-0 top-0 z-50 -m-5 h-screen w-full bg-black bg-opacity-50 lg:block">
+    <div className="group absolute left-0 top-0 z-50 -m-5 h-screen w-full bg-black/50 lg:block">
       <div className="fixed right-0 h-screen w-3/5 max-w-lg bg-main">
         <div className="flex flex-row-reverse py-5 pr-8">
           <AiOutlineClose className="text-3xl text-gray-500 md:text-4xl" onClick={onClose} />

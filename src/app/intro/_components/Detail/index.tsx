@@ -22,7 +22,7 @@ const data = Mockdata
 export const PostNavbar: FC<Props> = (props) => {
   return (
     <nav className="navbar relative items-center justify-center">
-      <Link href={props.url} className="z-1 absolute left-2 top-4">
+      <Link href={props.url} className="absolute left-2 top-4">
         <MdOutlineArrowBackIosNew className="text-3xl text-black " />
       </Link>
       <h2 className="text-2xl font-bold italic">{props.title}</h2>
@@ -50,7 +50,7 @@ const PostDetail = () => {
       <div className="relative z-0">
         {/* 3Dタグ　：　モデルがあるかないかで表示を変える */}
         {isModel ? (
-          <div className="items-cente flex justify-center">
+          <div className="items-center flex justify-center">
             <DynamicModelViewer src="/steakcombo.glb" />
           </div>
         ) : (
@@ -112,7 +112,7 @@ const PostDetail = () => {
         </p>
 
         {/* 店舗情報 */}
-        <div className="lex flex-col gap-2 py-4">
+        <div className="flex flex-col gap-2 py-4">
           <h3 className="w-24 border-b text-lg">~店舗情報~</h3>
           {/* 住所 */}
           <div className="flex items-center gap-2">

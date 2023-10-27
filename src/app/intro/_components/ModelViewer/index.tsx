@@ -26,8 +26,11 @@ declare global {
 
 const ModelViewer: FC<ModelViewerProps> = ({ src }) => {
   const [style, setStyle] = React.useState<CSSProperties>({})
+
   useEffect(() => {
-    import('@google/model-viewer').catch(console.error)
+    import('@google/model-viewer').catch((error) => {
+      console.error('Failed to load model-viewer:', error)
+    })
   }, [])
 
   useEffect(() => {
@@ -35,7 +38,7 @@ const ModelViewer: FC<ModelViewerProps> = ({ src }) => {
       if (window.innerWidth < 600) {
         setStyle({ width: '320px', height: '300px' })
       } else if (window.innerWidth < 900) {
-        setStyle({ width: '320', height: '300px' })
+        setStyle({ width: '320px', height: '300px' }) // Fixed width value
       } else {
         setStyle({ width: '100%', height: '300px' })
       }

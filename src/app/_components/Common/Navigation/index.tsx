@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import Hamburger from '../elements/Icon/Hamburger'
+import Hamburger from '../../elements/Icon/Hamburger'
 
 type Props = {
   title: string
